@@ -1,0 +1,97 @@
+/* Add a rainbow diagonal background */
+body {
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: linear-gradient(45deg, 
+	  #ff0000 10%, 
+	  #ff7f00 20%, 
+	  #ffff00 30%, 
+	  #00ff00 40%, 
+	  #0000ff 50%, 
+	  #4b0082 60%, 
+	  #8b00ff 70%, 
+	  #ff0000 80%, 
+	  #ff7f00 90%
+	);
+	background-size: 200% 200%;
+	animation: rainbow 5s alternate-reverse infinite;
+	background-position: 0 0;
+ }
+ 
+ @keyframes rainbow {
+	0% {
+	  background-position: 0 0;
+	}
+	100% {
+	  background-position: 100% 100%;
+	}
+ }
+ 
+ div {
+	text-align: center;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+ }
+ 
+ label {
+	font-size: 1.2rem;
+	color: #333;
+	margin-bottom: 10px;
+ }
+ 
+ input {
+	font-size: 1rem;
+	padding: 8px 15px;
+	margin-top: 10px;
+	width: 100%;
+	max-width: 300px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	outline: none;
+	transition: border-color 0.3s ease;
+ }
+ 
+ input:focus {
+	border-color: #007bff;
+ }
+ 
+ button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 1rem;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+ }
+ 
+ button:hover {
+	background-color: #0056b3;
+ }
+ 
+ .animated-text {
+	margin-bottom: 20px;
+	display: inline-flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 50px;
+ }
+ 
+ .animated-text span {
+	font-size: 2rem;
+	display: inline-block;
+	transition: font-family 0.5s ease;
+	margin: 0 1px;
+ }
+ 
